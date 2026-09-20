@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .to-right {
+    right: 0 !important;
+  }
+
+  @media (max-width: 575px) {
+    .delet {
+      display: none !important;
+    }
+    .show {
+      display: block !important;
+    }
+    .appear {
+      display: block;
+    }
+    .col {
+      flex-direction: column !important;
+    }
+    .none {
+      display: none !important;
+    }
+    .on {
+      display: flex !important;
+    }
+    .text-size {
+      text-align: center;
+      font-size: 30px !important;
+    }
+    .center {
+      text-align: center;
+    }
+    .bigger {
+      max-width: 500px !important;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .delet {
+      display: none !important;
+    }
+    .appear {
+      display: block;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .appear {
+      display: none;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .appear {
+      display: none;
+    }
+  }
+  @media (min-width: 1200px) {
+    .appear {
+      display: none;
+    }
+  }
+}

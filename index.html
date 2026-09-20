@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="confige.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--  font awesome -->
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Intro Section</title>
+  </head>
+  <body class="">
+    <header>
+      <div
+        class="overlay z-30 hidden fixed w-screen h-screen to-0% left-0 right-0 bottom-0 cursor-pointer bg-[rgba(0,0,0,0.5)]"
+      ></div>
+      <div class="container flex justify-between pt-6 m-auto pr-3 pl-3">
+        <div class="flex justify-between gap-8 w-1/2">
+          <div class="logo mt-3"><img src="images/logo.svg" alt="" /></div>
+
+          <div class="flex justify-between flex-nowrap w-[130%] delet">
+            <div class="relative mt-2">
+              <button
+                id="btnFeat"
+                class="inline-block arrow-top hover:text-teal-700 font-bold"
+              >
+                Features
+                <img
+                  id="img"
+                  class="inline-block pl-1"
+                  src="images/icon-arrow-up.svg"
+                  alt=""
+                />
+              </button>
+              <ul
+                id="ulFeat"
+                class="absolute top-8 opacity-0 duration-500 w-[200px] pt-3 pb-3 rounded-2xl shadow-2xl bg-amber-50"
+              >
+                <li class="flex justify-center">
+                  <img src="images/icon-todo.svg" class="pr-1.5" alt="" />
+                  To Do List
+                </li>
+                <li class="flex justify-center pt-3.5 pb-3.5">
+                  <img src="images/icon-calendar.svg" class="pr-3.5" alt="" />
+                  Calendar
+                </li>
+                <li class="flex justify-center pb-3.5">
+                  <img src="images/icon-reminders.svg" class="pr-3.5" alt="" />
+                  reminders
+                </li>
+                <li class="flex justify-center">
+                  <img src="images/icon-planning.svg" class="pr-3.5" alt="" />
+                  Planning
+                </li>
+              </ul>
+            </div>
+            <div class="relative mt-2">
+              <button
+                id="btnCompany"
+                class="arrow-top hover:text-teal-700 font-bold"
+              >
+                Company
+                <img
+                  id="img"
+                  class="inline-block pl-1"
+                  src="images/icon-arrow-up.svg"
+                  alt=""
+                />
+              </button>
+              <ul
+                id="ulCompany"
+                class="absolute top-8 opacity-0 duration-500 w-[200px] pt-3 pb-3 rounded-2xl shadow-2xl bg-amber-50"
+              >
+                <li class="flex justify-center">History</li>
+                <li class="flex justify-center pt-3.5 pb-3.5">Our Team</li>
+                <li class="flex justify-center">Blog</li>
+              </ul>
+            </div>
+
+            <button class="hover:text-teal-700 font-bold">Careers</button>
+            <button class="hover:text-teal-700 font-bold">About</button>
+          </div>
+        </div>
+
+        <div class="flex gap-1 delet">
+          <button><a href="#"> Login </a></button>
+          <button
+            class="bg-white hover:bg-teal-600 duration-500 p-2 rounded-2xl border border-black hover:border-none"
+          >
+            <a class="" href="#">Register </a>
+          </button>
+        </div>
+        <div class="appear">
+          <img class="cursor-pointer menu" src="images/icon-menu.svg" alt="" />
+        </div>
+      </div>
+      <!-- start toggle menu -->
+      <div
+        id="toggleMenu"
+        class="appear fixed w-3/5 h-screen top-0 -right-[600px] duration-500 z-50 bg-amber-50"
+      >
+        <div class="flex justify-end pt-5 pr-5" id="menuClose">
+          <img src="images/icon-close-menu.svg" class="cursor-pointer" alt="" />
+        </div>
+        <div class="pl-4">
+          <button
+            id="featToggle"
+            class="inline-block arrow-top hover:text-teal-700 font-bold"
+          >
+            Features
+            <img
+              id="img"
+              class="inline-block pl-1"
+              src="images/icon-arrow-up.svg"
+              alt=""
+            />
+          </button>
+          <ul
+            id="ulToggleFeat"
+            class="cursor-pointer duration-500 pt-3 pb-3 hidden"
+          >
+            <li class="flex justify-center hover:text-teal-500">
+              <img src="images/icon-todo.svg" class="pr-1.5" alt="" />
+              To Do List
+            </li>
+            <li class="flex justify-center pt-3.5 pb-3.5 hover:text-teal-500">
+              <img src="images/icon-calendar.svg" class="pr-3.5" alt="" />
+              Calendar
+            </li>
+            <li class="flex justify-center pb-3.5 hover:text-teal-500">
+              <img src="images/icon-reminders.svg" class="pr-3.5" alt="" />
+              reminders
+            </li>
+            <li class="flex justify-center hover:text-teal-500">
+              <img src="images/icon-planning.svg" class="pr-3.5" alt="" />
+              Planning
+            </li>
+          </ul>
+        </div>
+
+        <div class="pt-3 pb-3 pl-4">
+          <button
+            id="CompanyToggle"
+            class="arrow-top hover:text-teal-700 font-bold"
+          >
+            Company
+            <img
+              id="img"
+              class="inline-block pl-1"
+              src="images/icon-arrow-up.svg"
+              alt=""
+            />
+          </button>
+          <ul
+            id="ulToggleComp"
+            class="cursor-pointer duration-500 pt-3 pb-3 hidden"
+          >
+            <li class="flex justify-center hover:text-teal-500">History</li>
+            <li class="flex justify-center pt-3.5 pb-3.5 hover:text-teal-500">
+              Our Team
+            </li>
+            <li class="flex justify-center hover:text-teal-500">Blog</li>
+          </ul>
+        </div>
+        <button class="hover:text-teal-700 font-bold block pt-3 pb-3 pl-4">
+          Careers
+        </button>
+        <button class="hover:text-teal-700 font-bold pl-4">About</button>
+        <div class="flex flex-col mt-20 gap-5 -translate-y-16">
+          <button><a href="#"> Login </a></button>
+          <button
+            class="bg-white hover:bg-teal-600 duration-500 p-2 w-3/4 m-auto rounded-2xl border border-black hover:border-none"
+          >
+            <a class="" href="#">Register </a>
+          </button>
+        </div>
+      </div>
+      <!-- end toggle menu -->
+    </header>
+    <section class="pt-16">
+      <div class="container flex m-auto w-full justify-between col">
+        <div class="on justify-center hidden mb-20 m-auto">
+          <img src="images/image-hero-mobile.png" alt="" />
+        </div>
+        <div class="center">
+          <h1 class="text-[#151515] text-7xl text-size max-w-[420px]">
+            Make remote work
+          </h1>
+          <p class="text-[#747474] max-w-[400px] mb-9 mt-9 font-bold bigger">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button
+            class="pt-2.5 pb-2.5 pr-4 pl-4 rounded-2xl text-white hover:text-black bg-[#151515] hover:bg-white duration-500 hover:border hover:border-black"
+          >
+            <a href="#"> Learn more</a>
+          </button>
+          <div class="mt-12 flex justify-between pr-3 pl-3">
+            <img
+              src="images/client-databiz.svg"
+              class="w-[20%] cursor-pointer"
+              alt=""
+            />
+            <img
+              src="images/client-audiophile.svg"
+              class="w-[20%] cursor-pointer"
+              alt=""
+            />
+            <img
+              src="images/client-meet.svg"
+              class="w-[20%] cursor-pointer"
+              alt=""
+            />
+            <img
+              src="images/client-maker.svg"
+              class="w-[20%] cursor-pointer"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="w-1/2 flex justify-center none">
+          <img src="images/image-hero-desktop.png" class="w-3/5" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
